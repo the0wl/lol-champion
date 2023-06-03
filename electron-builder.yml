@@ -1,0 +1,12 @@
+appId: com.lolchampion.nextron
+productName: LOL Champion
+copyright: Copyright © 2023 Kelvin Seibt
+directories:
+  output: dist
+  buildResources: resources
+files:
+  - from: .
+    filter:
+      - package.json
+      - app
+publish: null

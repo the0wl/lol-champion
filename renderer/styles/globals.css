@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'DM Sans', 'sans-serif';
+    @apply text-[16px]; 
+  }
+  body {
+    @apply text-white;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('/images/background.jpg');
+    @apply bg-no-repeat bg-cover;
+  }
+}
+
+@layer components {
+  .container {
+    @apply px-[30px]
+  }
+  .league-border {
+    border: 10px solid black;
+    border-image-source: url('/images/border-2.png');
+    border-image-slice: 25 30;
+    border-image-repeat: round;
+  }
+  .league-border-secondary {
+    border-width: 10px 10px 0;
+    border-image-source: url('/images/border.png');
+    border-image-slice: 25 30;
+    border-image-repeat: round;
+  }
+}

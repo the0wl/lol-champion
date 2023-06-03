@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "baseUrl": "./renderer",
+    "paths": {
+      "@/components": ["components"],
+      "@/components/*": ["components/*"],
+      "@/objects": ["components/objects"],
+      "@/structure/*": ["components/structure/*"],
+      "@/common/*": ["components/common/*"],
+      "@/modals/*": ["components/modals/*"],
+      "@/utils/*": ["utils/*"],
+      "@/utils": ["utils"],
+    },
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "incremental": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve"
+  },
+  "exclude": [
+    "node_modules",
+    "renderer/next.config.js",
+    "app",
+    "dist"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "private": true,
+  "name": "lol-champion",
+  "description": "Aplicativo desktop para consulta de dados em tempo real, sobre campeões do jogo League of Legends",
+  "version": "1.0.0",
+  "contributors": [
+    "Ruan Frohlich <ruanfrohlich@gmail.com>",
+    "Kelvin Seibt <kelvin.seibt@gmail.com>"
+  ],
+  "license": "MIT",
+  "main": "app/background.js",
+  "scripts": {
+    "dev": "nextron",
+    "build": "nextron build",
+    "postinstall": "electron-builder install-app-deps"
+  },
+  "dependencies": {
+    "electron-serve": "^1.1.0",
+    "electron-store": "^8.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.18",
+    "@types/react": "^18.0.26",
+    "@typescript-eslint/eslint-plugin": "^5.59.8",
+    "@typescript-eslint/parser": "^5.59.8",
+    "eslint": "8.40.0",
+    "eslint-config-next": "13.4.1",
+    "autoprefixer": "^10.4.7",
+    "electron": "^21.3.3",
+    "electron-builder": "^23.6.0",
+    "next": "^12.3.4",
+    "nextron": "^8.5.0",
+    "postcss": "^8.4.13",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tailwindcss": "^3.1.8",
+    "typescript": "*",
+    "puppeteer": "^20.1.2"
+  }
+}
